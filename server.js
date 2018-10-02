@@ -17,7 +17,7 @@ const config = require('./utils/config');
 class Server{
 
     constructor(){
-        this.port =  process.env.PORT || 3000;
+        this.port =  process.env.PORT; //port env not working 
         this.host = `localhost`;
         
         this.app = express();
